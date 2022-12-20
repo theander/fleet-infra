@@ -1,0 +1,1 @@
+flux reconcile kustomization app --with-source
