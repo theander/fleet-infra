@@ -6,6 +6,7 @@ kind: PersistentVolume
 apiVersion: v1
 metadata:
   name: postgres-volume
+  namespace: infra
   labels:
     #it is aplugin suport many luke amazon EBS azure disk etc.  local = local storage devices mounted on nodes.
     type: local
