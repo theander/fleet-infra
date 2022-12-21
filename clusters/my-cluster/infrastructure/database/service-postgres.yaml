@@ -2,10 +2,11 @@ kind: Service
 apiVersion: v1
 metadata:
   name: postgres-service
+  namespace: infra
   labels:
     app: postgres
 spec: 
-  clusterIP: 10.96.1.2 
+  clusterIP: 10.128.1.2 
   ipFamilies:
   - IPv4
   ports:
