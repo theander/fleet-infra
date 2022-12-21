@@ -4,9 +4,9 @@ metadata:
   name: infrastructure
   namespace: infra
 resources:
+- ./infra-namespace.yaml
 - ./database/deployment-postgres.yaml
 - ./database/persistence-volume.yaml
 - ./database/persistence-volume-claim.yaml
 - ./database/secret-dev.yaml
 - ./database/service-postgres.yaml
-- ./infra-namespace.yaml

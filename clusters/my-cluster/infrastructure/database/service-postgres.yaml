@@ -2,17 +2,11 @@ kind: Service
 apiVersion: v1
 metadata:
   name: postgres-service
-  namespace: infra
   labels:
     app: postgres
-spec: 
-  clusterIP: 10.128.1.2 
-  ipFamilies:
-  - IPv4
+spec:
   ports:
-  - name: postgres
-    port: 5432
-    nodePort : 30431
+    - port: 5432
   #type: LoadBalancer
   type: NodePort
   selector:
