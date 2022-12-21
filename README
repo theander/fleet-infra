@@ -1,1 +1,2 @@
-flux reconcile kustomization app --with-source
+Reconciliar
+flux reconcile kustomization flux-system --with-source
