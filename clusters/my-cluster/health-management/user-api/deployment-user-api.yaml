@@ -20,6 +20,19 @@ spec:
         image: andercl/health-management-user-api:356d4365d4cbcbaf50d63305df1301444d18aa9b-3
         ports:
         - containerPort: 8180
-        envFrom:
-          - secretRef:
-              name: user-api-secret
+        env:
+          - name: DATABASE_USER
+            valueFrom:
+              secretKeyRef:
+                key: database_user
+                name: user-api-secret
+          - name: DATABASE_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                key: database_password
+                name: user-api-secret
+          - name: DATABASE_URL
+            valueFrom:
+              secretKeyRef:
+                key: database_url
+                name: user-api-secret
