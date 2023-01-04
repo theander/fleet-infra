@@ -1,9 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- ./infra-namespace.yaml
-- ./database/deployment-postgres.yaml
-- ./database/persistence-volume.yaml
-- ./database/persistence-volume-claim.yaml
-- ./database/secret-dev.yaml
-- ./database/service-postgres.yaml
