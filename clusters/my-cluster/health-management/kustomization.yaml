@@ -6,5 +6,6 @@ resources:
 - frontend/service-frontend.yaml
 - user-api/deployment-user-api.yaml
 - user-api/service-user-api.yaml
+- user-api/secret-user-api.yaml
 
 
