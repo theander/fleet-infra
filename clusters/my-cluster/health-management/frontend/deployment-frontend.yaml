@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: andercl/health-management-user-api:latest
+        image: andercl/health-management-frontend:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8180
