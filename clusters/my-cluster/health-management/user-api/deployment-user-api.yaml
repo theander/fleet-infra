@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: user-api
-        image: andercl/health-management-user-api:latest
+        image: andercl/health-management-user-api:356d4365d4cbcbaf50d63305df1301444d18aa9b-3
         ports:
         - containerPort: 8180
         envFrom:
