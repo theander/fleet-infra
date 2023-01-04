@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: user-api-service
+  namespace: health-management
+  labels:
+    app.kubernetes.io/name: user-api
+spec:
+  ports:
+  - name: user-api-port
+    port: 8180
+    targetPort: 8180
+  type: NodePort
+  selector:
+    app.kubernetes.io/name: user-api
