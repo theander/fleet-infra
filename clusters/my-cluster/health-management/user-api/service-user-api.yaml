@@ -9,7 +9,7 @@ spec:
   ports:
   - name: user-api-port
     port: 8180
-    targetPort: 8180
+    nodePort: 30780
   type: NodePort
   selector:
     app.kubernetes.io/name: user-api

@@ -6,8 +6,13 @@ metadata:
   labels:
     app: postgres
 spec:
+  clusterIP: 10.96.1.2
+  ipFamilies:
+    - IPv4
   ports:
-    - port: 5432
+    - name: postgres
+      port: 5432
+      nodePort: 30432
   #type: LoadBalancer
   type: NodePort
   selector:
