@@ -10,6 +10,6 @@ spec:
   - name: frontend-port
     port: 3000
     targetPort: 3000
-  type: NodePort
+  type: LoadBalancer
   selector:
     app.kubernetes.io/name: frontend
