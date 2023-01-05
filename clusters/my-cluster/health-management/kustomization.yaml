@@ -2,6 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - hm-namespace.yaml
+- frontend/deployment-frontend.yaml
+- frontend/service-frontend.yaml
 - user-api/deployment-user-api.yaml
 - user-api/service-user-api.yaml
 - user-api/secret-user-api.yaml
