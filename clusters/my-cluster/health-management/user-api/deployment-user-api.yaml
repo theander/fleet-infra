@@ -32,4 +32,4 @@ spec:
                 key: database_password
                 name: user-api-secret
           - name: DATABASE_URL
-            value: jdbc:postgresql://localhost:5432/users
+            value: jdbc:postgresql://postgres-service:5432/users
