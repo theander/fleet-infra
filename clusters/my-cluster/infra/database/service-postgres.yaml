@@ -6,9 +6,6 @@ metadata:
   labels:
     app: postgres
 spec:
-  clusterIP: 10.96.1.2
-  ipFamilies:
-    - IPv4
   ports:
     - name: postgres
       port: 5432
