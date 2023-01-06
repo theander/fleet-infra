@@ -20,4 +20,4 @@ spec:
         image: andercl/health-management-frontend:9 # {"$imagepolicy": "flux-system:frontend"}
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 8180
+        - containerPort: 80
