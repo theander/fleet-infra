@@ -3,13 +3,17 @@ kind: Service
 metadata:
   name: frontend-service
   namespace: health-management
+  annotations:
+    service.beta.kubernetes.io/linode-loadbalancer-throttle: "4"
   labels:
     app.kubernetes.io/name: frontend
 spec:
   type: LoadBalancer
   ports:
-  - name: frontend-port
+  - name: http
     port: 80
-    targetPort: 8080
+    protocol: TCP
+    targetPort: 80
   selector:
     app.kubernetes.io/name: frontend
+  sessionAffinity: None
