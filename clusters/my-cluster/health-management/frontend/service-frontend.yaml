@@ -6,10 +6,10 @@ metadata:
   labels:
     app.kubernetes.io/name: frontend
 spec:
+  type: LoadBalancer
   ports:
   - name: frontend-port
     port: 80
-    targetPort: 80
-  type: LoadBalancer
+    targetPort: 8080
   selector:
     app.kubernetes.io/name: frontend

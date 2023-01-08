@@ -7,4 +7,3 @@ resources:
 - database/persistence-volume-claim.yaml
 - database/secret-dev.yaml
 - database/service-postgres.yaml
-- ingress-controller/ingress.yaml
