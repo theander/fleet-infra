@@ -24,6 +24,11 @@ spec:
           image: postgres:15.1
           imagePullPolicy: IfNotPresent
           #open the port to allow send and receive traffic in teh container
+          resources:
+            limits:
+              cpu: "0.5"
+            requests:
+              cpu: "0.3"
           ports:
             - containerPort: 5432
             #read envars from secret file
