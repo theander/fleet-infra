@@ -5,9 +5,9 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-#  ingressClassName: nginx-example
+  ingressClassName: nginx-example
   rules:
-    - host: health-management.puc.br
+    - host: health-management-pos-tccpuc.online
     - http:
         paths:
           - path: /
