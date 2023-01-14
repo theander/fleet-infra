@@ -5,6 +5,7 @@ resources:
 - frontend/deployment-frontend.yaml
 - frontend/service-frontend.yaml
 - frontend/ingress.yaml
+- frontend/frontend-tls-secret.yaml
 - user-api/deployment-user-api.yaml
 - user-api/service-user-api.yaml
 - user-api/secret-user-api.yaml
