@@ -3,11 +3,7 @@ kind: Ingress
 metadata:
   name: frontend-ingress
   namespace: health-management
-  annotations:
-    app.kubernetes.io: health-management
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: nginx-frontend
   tls:
     - hosts:
         - health-management-pos-tccpuc.online
