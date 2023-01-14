@@ -1,2 +1,6 @@
 Reconciliar
 flux reconcile kustomization flux-system --with-source
+
+
+Instalação ingress controller
+https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-manifests/
