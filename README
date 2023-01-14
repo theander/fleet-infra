@@ -4,3 +4,6 @@ flux reconcile kustomization flux-system --with-source
 
 Instalação ingress controller
 https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-manifests/
+
+Delete Imutable fields kubernetes
+kubectl delete >object_type< >object_name< -n >namespace<
