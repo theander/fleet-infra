@@ -8,6 +8,10 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
+  tls:
+    - hosts:
+        - health-management-pos-tccpuc.online
+    - secretName: frontend-tls-secret
   rules:
     - host: health-management-pos-tccpuc.online
     - http:
