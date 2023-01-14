@@ -3,6 +3,10 @@ kind: Ingress
 metadata:
   name: frontend-ingress
   namespace: health-management
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt"
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
 spec:
   tls:
     - hosts:
