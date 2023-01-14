@@ -15,5 +15,6 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
+    app: frontend
     app.kubernetes.io/name: frontend
   sessionAffinity: None
