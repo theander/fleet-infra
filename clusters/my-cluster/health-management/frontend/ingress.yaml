@@ -12,7 +12,7 @@ spec:
     - host: health-management-pos-tccpuc.online
     - http:
         paths:
-          - path: /
+          - path: /home
             pathType: Prefix
             backend:
               service:
