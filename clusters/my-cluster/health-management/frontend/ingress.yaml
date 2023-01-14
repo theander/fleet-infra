@@ -16,6 +16,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: health-management/frontend-service
+                name: frontend-service
                 port:
                   number: 80
