@@ -248,6 +248,9 @@ metadata:
   name: nginx-config
   namespace: nginx-ingress
 data:
+  proxy-protocol: "True"
+  real-ip-header: "proxy_protocol"
+  set-real-ip-from: "0.0.0.0/0"
 ---
 apiVersion: networking.k8s.io/v1
 kind: IngressClass
