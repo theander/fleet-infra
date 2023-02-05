@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: user-api-service
+  name: medical-api-service
   namespace: health-management
   labels:
-    app.kubernetes.io/name: user-api
+    app.kubernetes.io/name: medical-api
 spec:
   ports:
-  - name: user-api-port
+  - name: medical-api-port
     port: 8180
     nodePort: 30780
   type: NodePort
   selector:
-    app.kubernetes.io/name: user-api
+    app.kubernetes.io/name: medical-api

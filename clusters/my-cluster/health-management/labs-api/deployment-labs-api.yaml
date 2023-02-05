@@ -1,36 +1,36 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: user-api
+  name: labs-api
   namespace: health-management
   labels:
-    app.kubernetes.io/name: user-api
+    app.kubernetes.io/name: labs-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: user-api
+      app: labs-api
   template:
     metadata:
       labels:
-        app: user-api
+        app: labs-api
     spec:
       containers:
-      - name: user-api
-        image: andercl/health-management-user-api:1.0.6 # {"$imagepolicy": "flux-system:user-api"}
+      - name: labs-api
+        image: andercl/health-management-labs-api:1.0.6 # {"$imagepolicy": "flux-system:labs-api"}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8180
         env:
-        - name: DATABASE_USER
+        - name: DATABASE_labs
           valueFrom:
             secretKeyRef:
-              key: database_user
-              name: user-api-secret
+              key: database_labs
+              name: labs-api-secret
         - name: DATABASE_PASSWORD
           valueFrom:
             secretKeyRef:
               key: database_password
-              name: user-api-secret
+              name: labs-api-secret
         - name: DATABASE_URL
-          value: jdbc:postgresql://postgres-service.infra:5432/users
+          value: jdbc:postgresql://postgres-service.infra:5432/labs

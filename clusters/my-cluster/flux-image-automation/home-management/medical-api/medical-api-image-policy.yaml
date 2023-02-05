@@ -1,11 +1,11 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImagePolicy
 metadata:
-  name: user-api
+  name: medical-api
   namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: user-api
+    name: medical-api
   policy:
     semver:
       range: 1.0.x

@@ -1,8 +1,8 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageRepository
 metadata:
-  name: user-api
+  name: medical-api
   namespace: flux-system
 spec:
-  image: andercl/health-management-user-api
+  image: andercl/health-management-medical-api
   interval: 1m0s
