@@ -8,8 +8,8 @@ metadata:
 spec:
   ports:
   - name: medical-api-port
-    port: 8180
-    nodePort: 30780
+    port: 8380
+    nodePort: 30783
   type: NodePort
   selector:
     app.kubernetes.io/name: medical-api

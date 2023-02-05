@@ -8,8 +8,8 @@ metadata:
 spec:
   ports:
   - name: labs-api-port
-    port: 8180
-    nodePort: 30780
+    port: 8280
+    nodePort: 30782
   type: NodePort
   selector:
     app.kubernetes.io/name: labs-api
