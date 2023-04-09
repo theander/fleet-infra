@@ -22,7 +22,7 @@ spec:
         ports:
         - containerPort: 8380
         env:
-        - name: DATABASE_medical
+        - name: DATABASE_USER
           valueFrom:
             secretKeyRef:
               key: database_medical
