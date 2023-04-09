@@ -34,3 +34,5 @@ spec:
               name: labs-api-secret
         - name: DATABASE_URL
           value: jdbc:postgresql://postgres-service.infra:5432/labs
+        - name: ENVIRONMENT
+          value: production

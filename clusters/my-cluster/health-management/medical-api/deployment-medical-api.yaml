@@ -34,3 +34,5 @@ spec:
               name: medical-api-secret
         - name: DATABASE_URL
           value: jdbc:postgresql://postgres-service.infra:5432/medical
+        - name: ENVIRONMENT
+          value: production
