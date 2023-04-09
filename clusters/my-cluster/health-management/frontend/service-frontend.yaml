@@ -13,6 +13,7 @@ spec:
     port: 3000
     protocol: TCP
     targetPort: 3000
+    type: NodePort
   selector:
     app: frontend
     app.kubernetes.io/name: frontend
