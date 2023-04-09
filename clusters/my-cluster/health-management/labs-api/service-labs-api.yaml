@@ -8,7 +8,7 @@ metadata:
 spec:
   ports:
   - name: labs-api-port
-    port: 8280
+    port: 8380
     nodePort: 30782
   type: NodePort
   selector:

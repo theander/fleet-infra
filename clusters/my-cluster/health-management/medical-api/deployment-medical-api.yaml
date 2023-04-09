@@ -20,7 +20,7 @@ spec:
         image: andercl/health-management-medical-api:1.0.6 # {"$imagepolicy": "flux-system:medical-api"}
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 8380
+        - containerPort: 8280
         env:
         - name: DATABASE_USER
           valueFrom:

@@ -8,7 +8,7 @@ metadata:
 spec:
   ports:
   - name: medical-api-port
-    port: 8380
+    port: 8280
     nodePort: 30783
   type: NodePort
   selector:
