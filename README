@@ -7,3 +7,16 @@ https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-m
 
 Delete Imutable fields kubernetes
 kubectl delete >object_type< >object_name< -n >namespace<
+
+
+Get external ip
+kubectl get nodes -owide
+
+
+https://platform9.com/learn/v1.0/tutorials/nginix-controller-via-yaml
+
+//VAlidate nginx
+
+kubectl get pods --all-namespaces -l app.kubernetes.io/name=ingress-nginx
+
+kubectl get services ingress-nginx-controller --namespace=ingress-nginx
