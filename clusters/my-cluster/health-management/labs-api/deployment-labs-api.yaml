@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: labs-api
-        image: andercl/health-management-labs-api:1.0.10 # {"$imagepolicy": "flux-system:labs-api"}
+        image: andercl/health-management-labs-api:1.0.11 # {"$imagepolicy": "flux-system:labs-api"}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8380
