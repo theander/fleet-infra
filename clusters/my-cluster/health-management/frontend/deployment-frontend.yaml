@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: andercl/health-management-frontend:1.0.22 # {"$imagepolicy": "flux-system:frontend"}
+        image: andercl/health-management-frontend:1.0.23 # {"$imagepolicy": "flux-system:frontend"}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
